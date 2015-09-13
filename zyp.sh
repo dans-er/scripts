@@ -165,11 +165,11 @@ unzyp() {
 			if [ "$?" != 0 ]; then
 				ERR_TARRED=$((ERR_TARRED+1))
 			elif [ "$ASK_DELETE_ZIP" = 1 ]; then
-					echo -e "* Delete the file $filename? \n> (y/n)"
-					read
-					if [ "$REPLY" = "y" -o "$REPLY" = "yes" ]; then
-						rm "$file"
-					fi
+				echo -e "* Delete the file $filename? \n> (y/n)"
+				read
+				if [ "$REPLY" = "y" -o "$REPLY" = "yes" ]; then
+					rm "$file"
+				fi
 			else
 				rm "$file"
 			fi
