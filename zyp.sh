@@ -56,7 +56,7 @@ usage() {
 	echo -e "\033[1mUsage\033[0m: \t$NAME [[options] [-f]] file | directory"
 	echo
 	echo -e "\033[1mOptions\033[0m:"
-	echo -e "\t \033[1m-a --ask\033[0m \t Ask if a successfully unzipped zip-files should be deleted."
+	echo -e "\t \033[1m-a --ask\033[0m \t Ask if successfully unzipped zip-files should be deleted."
 	echo -e "\t   \t \t Default is no, don't ask."
 	
 	echo -e "\t \033[1m-f --file\033[0m \t Name of the file or directory to process. (Required)"
@@ -66,6 +66,8 @@ usage() {
 	echo -e "\t \t \t    ${EXPAND_GZIP[*]}"
 	echo -e "\t \t \t will be preprocessed by gzip, which will deflate the files"
 	echo -e "\t \t \t and strip the above mentioned extensions."
+	
+	echo -e "\t \033[1m-h --help\033[0m \t Print this help message."
 	
 	echo -e "\t \033[1m-l --list\033[0m \t List compressed files. Do not expand."
 	
