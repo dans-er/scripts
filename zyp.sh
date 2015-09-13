@@ -131,9 +131,9 @@ unzyp() {
 			for fi in "${array[@]}"
 			do
 				dir="${fi%%/*}"
-        		if [ "$dir" != "$prevdir" ]; then
+				if [ "$dir" != "$prevdir" ]; then
 					onedir=$((onedir+1))
-        		fi
+				fi
 			done
 			
 			
