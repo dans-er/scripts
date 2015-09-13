@@ -168,9 +168,9 @@ unzyp() {
 				if [ "$ASK_DELETE_ZIP" = 1 ]; then
 					echo -e "* Delete the file $filename? \n> (y/n)"
 					read
-        			if [ "$REPLY" = "y" -o "$REPLY" = "yes" ]; then
-                		rm "$file"
-        			fi
+					if [ "$REPLY" = "y" -o "$REPLY" = "yes" ]; then
+						rm "$file"
+					fi
 				else
 					rm "$file"
 				fi
