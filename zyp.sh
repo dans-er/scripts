@@ -67,7 +67,7 @@ usage() {
 	echo -e "\t \t \t will be preprocessed by gzip, which will deflate the files"
 	echo -e "\t \t \t and strip the above mentioned extensions."
 	
-	echo -e "\t \033[1m-h --help\033[0m \t Print this help message."
+	echo -e "\t \033[1m-h --help\033[0m \t Print this help message and quit."
 	
 	echo -e "\t \033[1m-l --list\033[0m \t List compressed files. Do not expand."
 	
